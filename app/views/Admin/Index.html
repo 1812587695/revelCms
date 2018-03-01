@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>万和商城|总后台</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="/public/adminlte/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/font-awesome/font-awesome.min.css">
+    <!-- Ionicons -->
+    <!--link rel="stylesheet" href="/public/adminlte/plugins/ionicons/ionicons.min.css"-->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/public/adminlte/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="/public/adminlte/dist/css/skins/_all-skins.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/iCheck/flat/blue.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/morris/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/datepicker/datepicker3.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="/public/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/Public/admin/css/common.css">
+    <script src="/public/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="/Public/admin/js/jquery.validate.min.js"></script>
+    <script src="/Public/admin/js/jquery.validate.config.js"></script>
+    <script src="/Public/admin/js/common.js?v=20170627001"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/public/adminlte/plugins/html5shiv/html5shiv.min.js"></script>
+    <script src="/public/adminlte/plugins/html5shiv/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="" class="logo">
+            <span class="logo-mini"><b>万和</b></span>
+            <span class="logo-lg"><b>万和商城|总后台</b></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="/public/adminlte/dist/img/pingtai-face.png" class="user-image" alt="User Image">
+                            <span class="hidden-xs">admin</span>
+                        </a>
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        <a href="/Manage/login/loginOut" class="dropdown-toggle">
+                            <i class="fa fa-bell-o">退出</i>
+                            <span class="label label-warning">~</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left logo -->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <!-- 导航页面 -->
+            <ul class="sidebar-menu">
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-dashboard"></i> <span>首页管理</span>
+                        <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/manage/index/index.html"><i class="fa fa-circle-o"></i> 首页</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i>
+                        <span>微信设置</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/Manage/Weixin/twoDBarcode.html"><i class="fa fa-circle-o"></i> 二维码列表</a></li>
+                    </ul>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="/Manage/Weixin/wxInformation.html"><i class="fa fa-circle-o"></i> 微信消息模板列表</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i> <span>短信管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/Manage/Letter/index.html"><i class="fa fa-circle-o"></i> 短信模板</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i>
+                        <span>采购</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/Manage/purchase/index.html"><i class="fa fa-circle-o"></i> 采购单列表</a></li>
+                        <li class=""><a href="/Manage/purchase/setup.html"><i class="fa fa-circle-o"></i> 可采购商品配置</a></li>
+                        <li class=""><a href="/Manage/purchase/stores.html"><i class="fa fa-circle-o"></i> 店铺可采购商品配置</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i> <span>供应商</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/manage/vendor/index.html"><i class="fa fa-circle-o"></i>供应商档案</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-laptop"></i>
+                        <span>商品</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/manage/GoodsCat/index.html"><i class="fa fa-circle-o"></i> 总分类</a></li>
+                        <li><a href="/manage/Goods/index.html" ><i class="fa fa-circle-o"></i> 基础商品库</a></li>
+                        <li><a href="/manage/Label/index.html" ><i class="fa fa-circle-o"></i> 商品标签</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:;">
+                        <i class="fa fa-edit"></i> <span>订单</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu ">
+                        <li><a href="/Manage/Orders/orderList.html"><i class="fa fa-circle-o"></i> 所有订单</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-table"></i> <span>营销</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/Manage/special/index.html"><i class="fa fa-circle-o"></i> 专题模板</a></li>
+                        <li><a href="/Manage/Feedback/index.html"><i class="fa fa-circle-o"></i> 投诉与建议</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-calendar"></i> <span>统计</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/Manage/Stat/bonus.html"><i class="fa fa-circle-o"></i> 资产提现统计</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-envelope"></i> <span>权限</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/manage/rbac/user"><i class="fa fa-circle-o"></i> 帐户</a></li>
+                        <li><a href="/manage/rbac/role"><i class="fa fa-circle-o"></i> 角色</a></li>
+                        <li><a href="/manage/rbac/menu"><i class="fa fa-circle-o"></i> 菜单</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-folder"></i> <span>店铺</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/manage/store/index"><i class="fa fa-circle-o"></i> 店铺管理</a></li>
+                        <li><a href="/manage/store/shelves"><i class="fa fa-circle-o"></i> 可上架商品管理</a></li>
+                        <li><a href="/manage/StoreGoods/index"><i class="fa fa-circle-o"></i> 一键上架商品</a></li>
+                        <li><a href="/manage/Dly/index"><i class="fa fa-circle-o"></i> 店铺物流公司</a></li>
+                    </ul>
+                </li>
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i> <span>售后</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/Manage/Refund/index/view/1.html"><i class="fa fa-circle-o"></i> 退款退货</a></li>
+                        <li class=""><a href=""><i class="fa fa-circle-o"></i> 投诉</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/Manage/User/index.html">
+                        <i class="fa fa-share"></i> <span>会员</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/Manage/User/index.html"><i class="fa fa-circle-o"></i> 会员列表</a></li>
+                        <li><a href="/Manage/User/tempUser.html"><i class="fa fa-circle-o"></i> 游客列表</a></li>
+                    </ul>
+                </li>
+                <!--<li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i>
+                        <span>奖金</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="/Manage/Bonus/index.html"><i class="fa fa-circle-o"></i>奖金流水列表</a></li>
+                    </ul>
+                </li>-->
+
+                <li class="treeview ">
+                    <a href="javascript:;">
+                        <i class="fa fa-envelope"></i> <span>分销</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="/Manage/Distribution/setMoney.html"><i class="fa fa-circle-o"></i> 分销配置</a></li>
+                        <li class=""><a href="/Manage/Distribution/memberList.html"><i class="fa fa-circle-o"></i> 分销人员列表</a></li>
+                        <li class="active"><a href="/Manage/Poster/index.html"><i class="fa fa-circle-o"></i> 微信生成海报设置</a></li>
+                        <li class="active"><a href="/Manage/Bonus/index.html"><i class="fa fa-circle-o"></i>资产流水列表</a></li>
+                        <li class=""><a href="/Manage/Bonus/cash.html"><i class="fa fa-circle-o"></i>资产提现列表</a></li>
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="header">财务</li>
+                <li><a href="/Manage/Bills/index.html"><i class="fa fa-circle-o text-red"></i> <span>店铺结算账单</span></a></li>
+                <!--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>备注2</span></a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>备注3</span></a></li>-->
+
+
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- 内容页 -->
+    <div class="content-wrapper" style="background:#fff;">
+        <div class="welcome-body">
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="main-footer">
+    </footer>
+</div>
+
+
+</body>
+</html>
+<script src="/public/adminlte/dist/js/app.min.js"></script>
